@@ -1,26 +1,56 @@
 # CDC 2FF Synchronizer
 
 ## Overview
-This project implements a 2-Flip-Flop (2FF) Synchronizer for safe Clock Domain Crossing (CDC) of a single-bit asynchronous signal.
+This project implements a Clock Domain Crossing (CDC) Two-Flip-Flop (2FF) Synchronizer in Verilog. The design safely transfers a single-bit signal from one clock domain to another while reducing the probability of metastability.
 
-## Folder Structure
+## Features
+- Two Flip-Flop Synchronizer
+- Verilog HDL Implementation
+- Functional Simulation using Vivado
+- RTL Schematic
+- Waveform Verification
+- Easy to understand and reusable design
+
+## Project Structure
+
 ```
-rtl/
-tb/
-waveforms/
-schematics/
+CDC-2FF-Synchronizer
+│
+├── rtl/
+│   └── sync_2ff.v
+├── tb/
+│   └── sync_2ff_tb.v
+├── schematics/
+│   └── 2ff_rtl.png
+├── waveforms/
+│   └── 2ff_waveform.png
+└── README.md
 ```
 
 ## Tools Used
+
 - Verilog HDL
-- AMD Vivado 2025.2
+- Xilinx Vivado 2025.2
 
-## Files
-- sync_2ff.v
-- sync_2ff_tb.v
+## Simulation Result
 
-## Results
-The repository includes RTL schematics and simulation waveforms demonstrating correct synchronization.
+The simulation confirms that the input signal is synchronized to the destination clock after passing through two flip-flops.
+
+## RTL Schematic
+
+![RTL](schematics/2ff_rtl.png)
+
+## Waveform
+
+![Waveform](waveforms/2ff_waveform.png)
+
+## Applications
+
+- Clock Domain Crossing (CDC)
+- FPGA Designs
+- ASIC Designs
+- Digital VLSI Systems
 
 ## Author
-Snehanjali
+
+Snehanjali Dasari
